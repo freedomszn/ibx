@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Footer = () => {
     return (
         <>
-            <div className="flex flex-col max-w-full items-start justify-between gap-10 px-4 py-17.5 bg-black dotted">
+            <div className="flex flex-col max-w-full items-start justify-between gap-10 px-4 py-16 bg-black dotted md:px-6 lg:px-10 xl:px-10">
                 <div className="flex gap-4 countries">
                     <img src="/Nigeria.svg" alt="nigeria" />
                     <img src="/Ghana.svg" alt="ghana" />
@@ -12,9 +12,9 @@ const Footer = () => {
                     <img src="/Togo.svg" alt="kenya" />
                     <img src="/Benin.svg" alt="egypt" />
                 </div>
-                <div className='flex gap-10 items-start flex-col'>
+                <div className='flex gap-10 lg:gap-6 items-start flex-col xl:flex-row-reverse xl:items-center xl:justify-between w-full'>
 
-                    <nav className='flex'>
+                    <nav className='flex shrink-0'>
                         <NavLink to="/Home" className="text-[16px] text-white/70 font-medium leading-6 tracking-[-1.1%] hover:text-white transition-all duration-700">
                             Home
                         </NavLink>
@@ -27,8 +27,8 @@ const Footer = () => {
                             IBX Tour
                         </NavLink>
                     </nav>
-                    <div className=''>
-                        <h3 className='getai font-black text-xl text-white'>
+                    <div className='flex lg:items-center'>
+                        <h3 className='getai font-black text-xl lg:max-w-193.75 text-white lg:text-[32px]'>
                             Experience the next wave of innovation. Secure your place among the leaders.
                         </h3>
                     </div>
@@ -38,15 +38,17 @@ const Footer = () => {
                     Learn More
                 </button>
 
+                <div className="flex flex-col gap-8 lg:flex lg:justify-between lg:flex-row lg:mt-26.25 w-full">
                 <p className="text-white text-[16px] font-medium sans tracking-[-1.1%] leading-6">© 2025 Ibom Blockchain Xperience. All rights reserved.</p>
 
                 <div className="socials flex gap-6">
 
-                    <img className='point hover:scale-110 transition-all duration-500' src="/x.svg" alt="tweeteer" />
+                    <a href="https://x.com/IbomBlockchain"><img className='point hover:scale-110 transition-all duration-500' src="/x.svg" alt="x" /></a>
                     <img className='point hover:scale-110 transition-all duration-500' src="/in.svg" alt="linkedin" />
                     <img className='point hover:scale-110 transition-all duration-500' src="/fb.svg" alt="facebook" />
                     <img className='point hover:scale-110 transition-all duration-500' src="/git.svg" alt="github" />
 
+                </div>
                 </div>
             </div>
         </>

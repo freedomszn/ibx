@@ -11,7 +11,7 @@ const Collaborators = () => {
       "
         >
 
-            <div className="text-white px-4 py-11">
+            <div className="text-white px-4 py-11 md:px-6 lg:px-10 xl:px-10">
                 <p className="sans font-medium text-[16px] leading-6 tracking-[-1.1%] mb-1.5">
                     COLLABORATORS
                 </p>

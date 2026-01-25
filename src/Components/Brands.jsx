@@ -35,8 +35,10 @@ const LogoRow = ({ reverse = false, speed = 40 }) => {
                         src={logo.src}
                         alt="partner logo"
                         className="
-              h-[53.82px] sm:h-12 md:h-23 md:w-[97.5px]
-              w-[51.48px]
+                  h-13.5 w-12.75
+                md:h-20 md:w-19
+                lg:h-27 lg:w-26
+                xl:h-[97.5px] xl:w-23
               object-contain
               opacity-70
               grayscale

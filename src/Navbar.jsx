@@ -6,15 +6,15 @@ const Navbar = () => {
     const menu = "/menu.svg";
     return (
         <>
-            <header className="flex items-center justify-between px-4 py-[23.51px] graybg fixed top-0 right-0 left-0 z-50 navblur">
+            <header className="flex shrink-0 items-center justify-between px-4 py-[23.51px] md:px-6 lg:px-10 xl:px-10 graybg fixed top-0 right-0 left-0 z-50 navblur">
                 <div className="logo">
                     <NavLink end to="/">
-                        <img className='w-[107.25px] h-[32.97px]' src={logo} alt="IBX Logo" />
+                        <img className='w-[107.25px] h-[32.97px] md:w-29.5 md:h-9 lg:w-32.5 lg:h-10 xl:w-35.75 xl:h-11' src={logo} alt="IBX Logo" />
                     </NavLink>
                 </div>
 
-                <nav className='hidden'>
-                    <ul className=' px-4 items-center justify-center getai gap-5 '>
+                <nav className='x hidden'>
+                    <ul className='flex px-4 items-center justify-center getai gap-5 '>
                         <li>
                             <NavLink
                                 end
@@ -65,11 +65,11 @@ const Navbar = () => {
 
                     </ul>
 
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                 </nav>
 
-                <div className="menu">
-                    <img className='w-12' src={menu}  alt="menu" />
+                <div className="menu point">
+                    <img className='w-12' src={menu} alt="menu" />
                 </div>
             </header>
         </>
