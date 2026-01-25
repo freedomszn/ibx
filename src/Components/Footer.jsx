@@ -45,8 +45,8 @@ const Footer = () => {
 
                     <a href="https://x.com/IbomBlockchain"><img className='point hover:scale-110 transition-all duration-500' src="/x.svg" alt="x" /></a>
                     <img className='point hover:scale-110 transition-all duration-500' src="/in.svg" alt="linkedin" />
-                    <img className='point hover:scale-110 transition-all duration-500' src="/fb.svg" alt="facebook" />
-                    <img className='point hover:scale-110 transition-all duration-500' src="/git.svg" alt="github" />
+                    <a href="https://web.facebook.com/Ibomblockchainxperience"><img className='point hover:scale-110 transition-all duration-500' src="/fb.svg" alt="facebook" /></a>
+                    <a href="https://github.com/freedomszn"><img className='point hover:scale-110 transition-all duration-500' src="/git.svg" alt="github" /></a>
 
                 </div>
                 </div>
