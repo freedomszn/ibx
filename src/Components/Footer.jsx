@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <Link to="/IBX2026" className='w-full flex justify-center lg:justify-start'>
+                <Link to="/IBX2026" className='w-full flex'>
                 <button className="text-white text-[14px] bg-black dotted border border-white w-40 h-8 font-medium point rounded-md hover:bg-white/80 hover:text-black transition-all duration-700">
                     Learn More
                 </button>
