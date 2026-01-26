@@ -1,8 +1,15 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-const Navbar = () => {
-  const logo = "/logo.webp";
+const Navbar = ({ logo = "/logo.webp", links, cta }) => {
+  const defaultLinks = [
+    { to: "/home", label: "Home" },
+    { to: "/event", label: "IBX 2026" },
+    { to: "/tour", label: "IBX Tour" },
+    { to: "/about", label: "About Us" },  ];
+
+  const navLinks = links ?? defaultLinks;
+
   const [open, setOpen] = useState(false);
   const [headerH, setHeaderH] = useState(0);
 
@@ -77,10 +84,24 @@ const Navbar = () => {
           {/* Desktop nav */}
           <nav className="hidden md:block">
             <ul className="flex px-4 items-center justify-center getai gap-5">
-              <li><NavLink end to="/Home" className={linkClass}>Home</NavLink></li>
-              <li><NavLink end to="/About" className={linkClass}>About Us</NavLink></li>
-              <li><NavLink end to="/IBX2026" className={linkClass}>IBX 2026</NavLink></li>
-              <li><NavLink end to="/Tour" className={linkClass}>IBX Tour</NavLink></li>
+              {navLinks.map((l) => (
+                <li key={l.to}>
+                  <NavLink end to={l.to} className={linkClass}>
+                    {l.label}
+                  </NavLink>
+                </li>
+              ))}
+
+              {cta && (
+                <li>
+                  <NavLink
+                    to={cta.to}
+                    className="px-8 block py-2.5 rounded-md bg-[#E87A12] text-white text-[14px] transition-all duration-700 hover:scale-105 font-semibold"
+                  >
+                    {cta.label}
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </nav>
 
@@ -141,7 +162,7 @@ const Navbar = () => {
 
       {/* DROPDOWN (separate glass layer — blur guaranteed) */}
       <div
-        className={`md:hidden fixed left-0 right-0 z-60 graybg navblur
+        className={`md:hidden fixed left-0 top-0 right-0 z-60 graybg navblur
           overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-out
           ${open ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"}`}
         style={{
