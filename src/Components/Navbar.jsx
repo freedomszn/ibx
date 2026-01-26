@@ -173,10 +173,10 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
       >
         <div className="px-4 pb-6">
           <ul className="flex flex-col items-center justify-center gap-6 py-6 getai">
-            <Item to="/Home">Home</Item>
-            <Item to="/About">About Us</Item>
-            <Item to="/IBX2026">IBX 2026</Item>
-            <Item to="/Tour">IBX Tour</Item>
+            <Item to="/home">Home</Item>
+            <Item to="/about">About Us</Item>
+            <Item to="/event">IBX 2026</Item>
+            <Item to="/tour">IBX Tour</Item>
           </ul>
         </div>
       </div>
