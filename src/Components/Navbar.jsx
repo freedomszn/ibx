@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="logo">
             <NavLink end to="/">
               <img
-                className="w-[107px] h-[33px] md:w-[118px] md:h-[36px] lg:w-[130px] lg:h-[40px] xl:w-[143px] xl:h-[44px] 2xl:w-[143px] 2xl:h-[44px]"
+                className="w-26.75 h-8.25 md:w-29.5 md:h-9 lg:w-32.5 lg:h-10 xl:w-35.75 xl:h-11 2xl:w-35.75 2xl:h-11"
                 src={logo}
                 alt="IBX Logo"
               />
@@ -111,7 +111,7 @@ const Navbar = () => {
 
               {/* X */}
               <svg
-                className={`absolute inset-0 w-9 h-9 p-[6px] transition-all duration-300 ease-out
+                className={`absolute inset-0 w-9 h-9 p-1.5 transition-all duration-300 ease-out
                   ${open ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-95"}`}
                 viewBox="0 0 24 24"
                 fill="none"
@@ -141,7 +141,7 @@ const Navbar = () => {
 
       {/* DROPDOWN (separate glass layer — blur guaranteed) */}
       <div
-        className={`md:hidden fixed left-0 right-0 z-[60] graybg navblur
+        className={`md:hidden fixed left-0 right-0 z-60 graybg navblur
           overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-out
           ${open ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"}`}
         style={{

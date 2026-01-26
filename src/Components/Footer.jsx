@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -34,19 +34,21 @@ const Footer = () => {
                     </div>
                 </div>
 
+                <Link to="/IBX2026" className='w-full flex justify-center lg:justify-start'>
                 <button className="text-white text-[14px] bg-black dotted border border-white w-40 h-8 font-medium point rounded-md hover:bg-white/80 hover:text-black transition-all duration-700">
                     Learn More
                 </button>
+                </Link>
 
                 <div className="flex flex-col gap-8 lg:flex lg:justify-between lg:flex-row lg:mt-26.25 w-full">
                 <p className="text-white text-[16px] font-medium sans tracking-[-1.1%] leading-6">© 2025 Ibom Blockchain Xperience. All rights reserved.</p>
 
                 <div className="socials flex gap-6">
 
-                    <a href="https://x.com/IbomBlockchain"><img className='point hover:scale-110 transition-all duration-500' src="/x.svg" alt="x" /></a>
+                    <Link to="https://x.com/IbomBlockchain"><img className='point hover:scale-110 transition-all duration-500' src="/x.svg" alt="x" /></Link>
                     <img className='point hover:scale-110 transition-all duration-500' src="/in.svg" alt="linkedin" />
-                    <a href="https://web.facebook.com/Ibomblockchainxperience"><img className='point hover:scale-110 transition-all duration-500' src="/fb.svg" alt="facebook" /></a>
-                    <a href="https://github.com/freedomszn"><img className='point hover:scale-110 transition-all duration-500' src="/git.svg" alt="github" /></a>
+                    <Link to="https://web.facebook.com/Ibomblockchainxperience"><img className='point hover:scale-110 transition-all duration-500' src="/fb.svg" alt="facebook" /></Link>
+                    <Link to="https://github.com/freedomszn"><img className='point hover:scale-110 transition-all duration-500' src="/git.svg" alt="github" /></Link>
 
                 </div>
                 </div>
