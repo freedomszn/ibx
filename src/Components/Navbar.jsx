@@ -6,7 +6,8 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
     { to: "/home", label: "Home" },
     { to: "/event", label: "IBX 2026" },
     { to: "/tour", label: "IBX Tour" },
-    { to: "/about", label: "About Us" },  ];
+    { to: "/about", label: "About Us" },
+  ];
 
   const navLinks = links ?? defaultLinks;
 
@@ -68,7 +69,7 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
       {/* HEADER (glass stays here) */}
       <header
         ref={headerRef}
-        className="fixed top-0 right-0 left-0 z-50 graybg navblur isolate"
+        className="fixed top-0 right-0 left-0 z-100 graybg navblur isolate"
       >
         <div className="flex shrink-0 items-center justify-between px-4 py-[23.51px] md:px-6 lg:px-10 xl:px-10">
           <div className="logo">
@@ -96,7 +97,7 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
                 <li>
                   <NavLink
                     to={cta.to}
-                    className="px-8 block py-2.5 rounded-md bg-[#E87A12] text-white text-[14px] transition-all duration-700 hover:scale-105 font-semibold"
+                    className="px-8 block py-2 rounded-md orange ml-3 text-white text-[14px] transition-all duration-700 hover:scale-105 font-semibold"
                   >
                     {cta.label}
                   </NavLink>

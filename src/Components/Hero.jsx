@@ -36,7 +36,7 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-4 mt-6 ">
-          <NavLink to="/IBX2026">
+          <NavLink  to="/Event">
             <button className="rounded-md geist orange w-30.5 h-8 text-sm font-bold text-black hover:scale-105 transition-all duration-700 point">
               2026 Event
             </button>

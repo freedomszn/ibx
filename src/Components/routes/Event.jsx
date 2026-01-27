@@ -4,6 +4,7 @@ import Navbar from '../Navbar';
 const Event = () => {
   return (
     <>
+
       <Navbar
         links={[
           { to: "/home", label: "Home" },
@@ -12,6 +13,8 @@ const Event = () => {
         ]}
         cta={{ to: "/register", label: "Register" }}
       />
+
+      
     </>
   );
 }

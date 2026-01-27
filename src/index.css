@@ -31,6 +31,10 @@
 
 .desc {
     color: #CCCCCC;
+    /* font-size: 14px; */
+}
+.whitebg {
+    background-color: #FFFFFF;
 }
 
 .point {
@@ -43,8 +47,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 .resize{
-    font-size: 30px;
+    font-size: 28px;
+}
+.box{
+    width: 300px;
+}
+.air{
+    font:medium;
+    width: 142px;
 }
 }
