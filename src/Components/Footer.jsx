@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div> */}
 
-      <div className="flex flex-col max-w-full items-start justify-between gap-10 px-4 py-16 bg-black dotted md:px-6 lg:px-10 xl:px-10">
+      <div className="flex flex-col max-w-full items-start justify-between gap-10 px-5 py-16 bg-black dotted md:px-7 lg:px-10 xl:px-12 2xl:px-15">
         <div className="flex p-0">
             <LogoRow speed={0}>
             </LogoRow>
@@ -104,7 +104,7 @@ const Footer = () => {
             © 2025 Ibom Blockchain Xperience. All rights reserved.
           </p>
 
-          <div className="socials flex gap-6">
+          <div className="socials flex gap-6 mb-20">
             <Link to="https://x.com/IbomBlockchain">
               <img
                 className="point hover:scale-110 transition-all duration-500"

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Hero = () => {
   const bgvideo = "assets/hero.mp4";
   return (
-    <div className="relative flex h-screen flex-col items-start justify-end px-4 pb-15 md:px-6 lg:px-10 xl:px-10 overflow-hidden">
+    <div className="relative flex h-screen flex-col items-start justify-end px-5 pb-15 md:px-7 lg:px-10 xl:px-12 2xl:px-15 overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay={true}

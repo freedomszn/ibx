@@ -1,6 +1,6 @@
 import React from 'react'
 import Brands from './Brands'
-// import Galaxy from './Galaxy';
+
 const Collaborators = () => {
     return (
         <div
@@ -11,7 +11,7 @@ const Collaborators = () => {
       "
         >
 
-            <div className="text-white px-4 py-11 md:px-6 lg:px-10 xl:px-10">
+            <div className="text-white px-5 py-11 md:px-7 lg:px-10 xl:px-12 2xl:px-15">
                 <p className="sans font-medium text-[16px] leading-6 tracking-[-1.1%] mb-1.5">
                     COLLABORATORS
                 </p>

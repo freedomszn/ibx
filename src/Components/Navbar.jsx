@@ -168,8 +168,8 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
           ${open ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"}`}
         style={{
           top: headerH, // sits exactly under the header without changing header height
-          WebkitBackdropFilter: "blur(16px)", // extra guarantee
-          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(5px)", // extra guarantee
+          backdropFilter: "blur(5px)",
         }}
       >
         <div className="px-4 pb-6">

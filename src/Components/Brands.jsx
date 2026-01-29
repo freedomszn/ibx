@@ -57,12 +57,14 @@ const LogoRow = ({ reverse = false, speed = 40 }) => {
 
 const Brands = () => {
     return (
-        <section className="w-full overflow-hidden">
-            <LogoRow speed={34} />
-            <LogoRow reverse speed={38} />
-            <LogoRow speed={34} />
-            <LogoRow reverse speed={38} />
-        </section>
+      <section className="w-full overflow-hidden">
+        <LogoRow speed={34} />
+        <LogoRow reverse speed={34} />
+        <LogoRow speed={34} />
+        <LogoRow reverse speed={34} />
+        <LogoRow speed={34} />
+        <LogoRow reverse speed={34} />
+      </section>
     );
 };
 
