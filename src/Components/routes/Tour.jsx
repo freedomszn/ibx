@@ -20,7 +20,7 @@ const Tour = () => {
         ]}
         cta={{ to: "/register", label: "Register" }}
       />
-      <div className="min-h-screen bg-black bg-[url(/overlay.png)] text-white">
+      <div className="min-h-screen bg-black text-white">
         <m.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const Tour = () => {
           <Card />
           <Collaborators />
           <Gallery />
-          <Join/>
+          <Join />
         </m.div>
       </div>
       <Footer />
