@@ -47,7 +47,7 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
 
   const linkClass = ({ isActive }) =>
     isActive
-      ? "text-[#fcfcfc] text-[16px] font-extrabold transition-all"
+      ? "text-[#E87A12] text-[16px] font-extrabold transition-all"
       : "text-[#DBDBDB] font-normal text-[15px]";
 
   const Item = ({ to, children }) => (
@@ -109,7 +109,7 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
           {/* Mobile toggle — same SVG size + transition */}
           <button
             type="button"
-            className="md:hidden point inline-flex items-center justify-center w-12 h-12"
+            className="md:hidden point inline-flex items-center justify-center w-12 h-12 "
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}

@@ -17,8 +17,8 @@
     font-family: 'Inter', sans-serif;
 }
 .navblur {
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .orange {
     background-color: #E87A12;
@@ -26,7 +26,7 @@
 
 .graybg {
   /* actual glass background */
-  background: rgba(17, 17, 17, 0.35); /* dark glass */
+  background: rgba(0, 0, 0, 0.45); /* dark glass */
 }
 
 .desc {

@@ -18,17 +18,17 @@ const Hero = () => {
         >
           <h1
             className="getai resize font-black text-[32px] text-white sm:text-[38px] sm:leading-11 sm:tracking-[-0.006em]
-    md:text-[44px] md:leading-[50px] md:tracking-[-0.0075em]
-    lg:text-[50px] lg:leading-[54px] lg:tracking-[-0.009em]
-    xl:text-[56px] xl:leading-[56px] xl:tracking-[-0.01em]"
+    md:text-[44px] md:leading-12.5 md:tracking-[-0.0075em]
+    lg:text-[50px] lg:leading-13.5 lg:tracking-[-0.009em]
+    xl:text-[56px] xl:leading-14 xl:tracking-[-0.01em]"
           >
             Empowering 100,000 West Africans — The IBX 2026 Tour Begins!
           </h1>
 
           <p
-            className="sans font-normal desc leading-5 tracking-[-0.6%] sm:text-[15px] sm:leading-[21px] sm:tracking-[-0.008em]
-    md:text-[16px] md:leading-[22px] md:tracking-[-0.010em]
-    lg:text-[17px] lg:leading-[23px] lg:tracking-[-0.012em]
+            className="sans font-normal desc leading-5 tracking-[-0.6%] sm:text-[15px] sm:leading-5.25 sm:tracking-[-0.008em]
+    md:text-[16px] md:leading-5.5 md:tracking-[-0.010em]
+    lg:text-[17px] lg:leading-5.75 lg:tracking-[-0.012em]
     xl:text-[18px] xl:leading-6 xl:tracking-[-0.015em]"
           >
             A 6-month West African campaign driving blockchain adoption,

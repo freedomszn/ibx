@@ -65,7 +65,7 @@ const Gallery = () => {
       </div>
 
       <Link to="" className="flex bg-black justify-center">
-        <button className="orange geist py-2 px-20 text-sm font-medium leading-5 rounded-md">See All</button>
+        <button className="orange geist py-2 px-20 text-sm font-medium leading-5 text-black rounded-md">See All</button>
       </Link>
     </>
   );

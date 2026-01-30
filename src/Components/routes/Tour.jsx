@@ -5,6 +5,8 @@ import Collaborators from "../Collaborators";
 import Hero from "../tour/Hero";
 import Card from "../tour/Card";
 import Gallery from "../tour/Gallery";
+import { motion as m } from "framer-motion";
+import Join from "../tour/Join";
 
 const Tour = () => {
   const logo = "/tourlogo.svg";
@@ -18,10 +20,21 @@ const Tour = () => {
         ]}
         cta={{ to: "/register", label: "Register" }}
       />
-      <Hero />
-      <Card />
-      <Collaborators />
-      <Gallery />
+      <div className="min-h-screen bg-black bg-[url(/overlay.png)] text-white">
+        <m.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+          className="min-h-screen"
+        >
+          <Hero />
+          <Card />
+          <Collaborators />
+          <Gallery />
+          <Join/>
+        </m.div>
+      </div>
       <Footer />
     </>
   );
