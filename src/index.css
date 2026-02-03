@@ -1,27 +1,27 @@
-@import url('https://fonts.cdnfonts.com/css/dt-getai-grotesk-display');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.cdnfonts.com/css/dt-getai-grotesk-display");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 .getai {
-    font-family: 'DT Getai Grotesk Display', sans-serif;
+  font-family: "DT Getai Grotesk Display", sans-serif;
 }
 
 .geist {
-    font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
 }
 
 .sans {
-    font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
-.inter{
-    font-family: 'Inter', sans-serif;
+.inter {
+  font-family: "Inter", sans-serif;
 }
 .navblur {
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 .orange {
-    background-color: #E87A12;
+  background-color: #e87a12;
 }
 
 .graybg {
@@ -30,35 +30,47 @@
 }
 
 .desc {
-    color: #CCCCCC;
-    /* font-size: 14px; */
+  color: #cccccc;
+  /* font-size: 14px; */
 }
 .whitebg {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .point {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dotted {
-    background-image: url(/dot.png);
+  background-image: url(/dot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recap {
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(/slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec {
+  background-position: center;
+  background-image: url(/sec.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 320px) {
-.resize{
+  .resize {
     font-size: 28px;
-}
-.box{
+  }
+  .box {
     width: 300px;
-}
-.air{
-    font:medium;
+  }
+  .air {
+    font: medium;
     width: 142px;
-}
-.aim{
+  }
+  .aim {
     padding: 40px 0;
-}
+  }
 }

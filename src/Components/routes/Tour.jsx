@@ -14,11 +14,11 @@ const Tour = () => {
     <>
       <Navbar
         links={[
-          { to: "/home", label: "Home" },
-          { to: "/tour", label: "IBX Tour" }, // replaced link
-          { to: "/about", label: "About Us" }, // extra link
+          { to: "/Home", label: "Home" },
+          { to: "/Tour", label: "IBX Tour" }, // replaced link
+          { to: "/About", label: "About Us" }, // extra link
         ]}
-        cta={{ to: "/register", label: "Register" }}
+        cta={{ to: "/register", label: "Join Now" }}
       />
       <div className="min-h-screen bg-black text-white">
         <m.div

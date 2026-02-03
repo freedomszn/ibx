@@ -23,7 +23,7 @@ const LogoRow = ({ reverse = false, speed = 40 }) => {
             gradient={false}
             className=" px-2"
         >
-            {[...logos, ...logos].map((logo, i) => (
+            {[...logos, ...logos, ...logos].map((logo, i) => (
                 <a
                     key={i}
                     href={logo.url}
