@@ -10,24 +10,21 @@ import Target from "../Target";
 import Outline from "../Outline";
 import Sponsors from "../Sponsors";
 
-const makeSlideVariants = (direction = "left") => {
-  const x = direction === "left" ? -40 : 40;
-  return {
-    hidden: { opacity: 0, x },
-    show: { opacity: 1, x: 0 },
-  };
+const sectionVariants = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0 },
 };
 
-const slideTransition = { duration: 0.6, ease: [0.4, 0, 0.2, 1] };
+const sectionTransition = { duration: 0.6, ease: [0.4, 0, 0.2, 1] };
 
-const Reveal = ({ children, from = "left", className = "" }) => (
+const Reveal = ({ children, className = "" }) => (
   <m.section
     className={className}
-    variants={makeSlideVariants(from)}
+    variants={sectionVariants}
     initial="hidden"
     whileInView="show"
-    viewport={{ once: true, amount: 0.25 }}
-    transition={slideTransition}
+    viewport={{ once: false, amount: 0.25 }} // once=true prevents re-animating on scroll up/down
+    transition={sectionTransition}
   >
     {children}
   </m.section>
@@ -46,39 +43,39 @@ const Home = () => {
       />
 
       <div className="min-h-screen bg-black text-white">
-        {/* Keep your page transition */}
+        {/* Page transition stays as-is */}
         <m.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
         >
-          {/* Scroll reveals: alternate left/right */}
-          <Reveal from="left">
+          {/* Scroll reveal sections */}
+          <Reveal>
             <Hero />
           </Reveal>
 
-          <Reveal from="right">
+          <Reveal>
             <Recap />
           </Reveal>
 
-          <Reveal from="left">
+          <Reveal>
             <Glimpse />
           </Reveal>
 
-          <Reveal from="right">
+          <Reveal>
             <Target />
           </Reveal>
 
-          <Reveal from="left">
+          <Reveal>
             <Outline />
           </Reveal>
 
-          <Reveal from="right">
+          <Reveal>
             <Sponsors />
           </Reveal>
 
-          <Reveal from="left">
+          <Reveal>
             <Collaborators />
           </Reveal>
         </m.div>
