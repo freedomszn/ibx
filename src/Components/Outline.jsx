@@ -6,7 +6,7 @@ const Outline = () => {
     <>
       <div className="flex flex-col px-5 md:px-7 lg:px-10  xl:px-12 2xl:px-15">
         <div className="flex items-start flex-col lg:flex-row lg:items-center lg:justify-between">
-          <div className='max-w-232.5 '>
+          <div className="max-w-232.5 ">
             <h2
               className='className="
                 font-black getai mb-5
@@ -36,16 +36,64 @@ const Outline = () => {
               leaders and discover cutting-edge developments in the Web3 space.
             </p>
           </div>
-          <button className='w-40 h-9 orange text-sm geist text-black rounded-md font-medium '>Add to Calender</button>
+          <button className="w-40 h-9 orange text-sm geist text-black rounded-md font-medium ">
+            Add to Calender
+          </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5 py-5">
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
+          <EventCard
+            title="IBOM BLOCKCHAIN SUMMIT"
+            date="10"
+            month="March"
+            location="E3 Event Center Uyo Village Road"
+            time="9:00 am - 5:00 PM"
+            image="/1.jpg"
+          />
+          <EventCard
+            title="IBOM BLOCKCHAIN SUMMIT"
+            date="11"
+            month="March"
+            location="E3 Event Center Uyo Village Road"
+            time="9:00 am - 5:00 PM"
+            image="/2.jpg"
+          />
+
+          <EventCard
+            title="DEN OF ROGUES"
+            date="12"
+            month="March"
+            location="E3 Event Center Uyo Village Road"
+            time="10:00 am - 4:00 PM"
+            image="/3.jpg"
+          />
+
+          <EventCard
+            title="FOUNDERS FORGE"
+            date="13"
+            month="March"
+            location="Upon registration"
+            time="8:30 am - 6:00 PM"
+            image="/4.jpg"
+          />
+
+          <EventCard
+            title="IBX GALA: A CELEBRATION OF VISIONARIES"
+            date="14"
+            month="March"
+            location="Exclusive"
+            time="5:00 PM Prompt"
+            image="/5.jpg"
+          />
+
+          {/* <EventCard
+            title="IBOM BLOCKCHAIN SUMMIT"
+            date="10"
+            month="March"
+            location="Exclusive"
+            time="5:00 PM"
+            image="/sec.png"
+          /> */}
         </div>
       </div>
     </>
