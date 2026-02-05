@@ -3,10 +3,17 @@ import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 
 const photos = [
-  { src: "/slide.jpg" },
-  { src: "/slide.jpg" },
-  { src: "/slide.jpg" },
-  { src: "/slide.jpg" },
+  { src: "/gallery/i.jpg" },
+  { src: "/gallery/ii.jpg" },
+  { src: "/gallery/iii.jpg" },
+  { src: "/gallery/iv.jpg" },
+  { src: "/gallery/vi.jpg" },
+  { src: "/gallery/vii.jpg" },
+  { src: "/gallery/viii.jpg" },
+  { src: "/gallery/ix.jpg" },
+  { src: "/gallery/x.jpg" },
+  { src: "/gallery/xi.jpg" },
+  { src: "/gallery/xii.jpg" },
 ];
 
 const Slide = ({ reverse = false, speed = 40 }) => {
@@ -28,22 +35,27 @@ const Slide = ({ reverse = false, speed = 40 }) => {
         >
           {/* ✅ Mask wrapper: this is what forces rounded corners on iOS */}
           <div className="rounded-xl overflow-hidden">
-            <img
-              src={photo.src}
-              alt="partner logo"
-              className="
+            <div className="group focus-within:outline-none" tabIndex={0}>
+              <img
+                src={photo.src}
+                alt="partner logo"
+                className="
                 h-89.5 max-w-116.25
                 object-cover
                 opacity-70
                 grayscale
+
                 group-hover:grayscale-0
                 group-hover:opacity-100
+                group-focus-within:grayscale-0
+                group-focus-within:opacity-100
+
                 transition-all
                 duration-300
-                will-change-transform
                 rounded-xl
               "
-            />
+              />
+            </div>
           </div>
         </div>
       ))}
@@ -65,7 +77,9 @@ const Gallery = () => {
       </div>
 
       <Link to="" className="flex bg-black justify-center">
-        <button className="orange geist py-2 px-20 text-sm font-medium leading-5 text-black rounded-md">See All</button>
+        <button className="orange geist py-2 px-20 text-sm font-medium leading-5 text-black rounded-md">
+          See All
+        </button>
       </Link>
     </>
   );

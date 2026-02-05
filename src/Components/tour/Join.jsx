@@ -11,9 +11,11 @@ const Join = () => {
             Join the Movement
           </h2>
           <img className="w-64.25 h-23" src={placeholder} alt="" />
-          <Link>
-            <button className="w-40 h-9 orange rounded-md geist font-medium px-6 text-sm tracking-[-0.6%] text-black" >Register Now</button>
-          </Link>
+          <a href="https://ibx2026.eventcrib.com/" target="blank ">
+            <button className="w-40 h-9 orange rounded-md geist point font-medium px-6 text-sm tracking-[-0.6%] text-black">
+              Register Now
+            </button>
+          </a>
         </div>
       </div>
     </>

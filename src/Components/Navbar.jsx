@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-const Navbar = ({ logo = "/logo.webp", links, cta }) => {
+const Navbar = ({ logo = "/logo.webp", links, cta}) => {
   const defaultLinks = [
     { to: "/home", label: "Home" },
     { to: "/tour", label: "IBX Tour" },
@@ -74,7 +74,7 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
         ref={headerRef}
         className="fixed top-0 right-0 left-0 z-100 graybg navblur isolate"
       >
-        <div className="flex shrink-0 items-center justify-between px-4 py-[23.51px] md:px-6 lg:px-10 xl:px-10">
+        <div className="flex shrink-0 items-center justify-between px-5 py-[23.51px] md:px-7 lg:px-10 xl:px-12 2xl:px-15" >
           <div className="logo">
             <NavLink end to="/">
               <img
@@ -99,9 +99,24 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
               {/* ✅ CTA ON DESKTOP */}
               {cta && (
                 <li>
-                  <NavLink to={cta.to} className={`${ctaClass} ml-3`}>
-                    {cta.label}
-                  </NavLink>
+                  {cta.href ? (
+                    <a
+                      href={cta.href}
+                      target={cta.target || "_self"}
+                      rel={
+                        cta.target === "_blank"
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                      className={`${ctaClass} ml-3`}
+                    >
+                      {cta.label}
+                    </a>
+                  ) : (
+                    <NavLink to={cta.to} className={`${ctaClass} ml-3`}>
+                      {cta.label}
+                    </NavLink>
+                  )}
                 </li>
               )}
             </ul>
@@ -197,9 +212,24 @@ const Navbar = ({ logo = "/logo.webp", links, cta }) => {
             {/* ✅ CTA ON DROPDOWN */}
             {cta && (
               <li className="w-full flex justify-center pt-2">
-                <NavLink to={cta.to} className={ctaClass}>
-                  {cta.label}
-                </NavLink>
+                {cta.href ? (
+                  <a
+                    href={cta.href}
+                    target={cta.target || "_self"}
+                    rel={
+                      cta.target === "_blank"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className={ctaClass}
+                  >
+                    {cta.label}
+                  </a>
+                ) : (
+                  <NavLink to={cta.to} className={ctaClass}>
+                    {cta.label}
+                  </NavLink>
+                )}
               </li>
             )}
           </ul>

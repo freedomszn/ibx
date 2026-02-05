@@ -37,11 +37,11 @@ const Hero = () => {
           </p>
 
           <div className="flex space-x-3">
-            <Link className="point" to="/event">
+            <a className="point" href="https://ibx2026.eventcrib.com/" target="blank">
               <Button className="air w-38.75 h-9 sans point">
                 Join the movement
               </Button>
-            </Link>
+            </a>
 
             <Link to="">
               <Button className="air w-38.75 h-9 sans whitebg point">

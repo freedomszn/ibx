@@ -39,7 +39,11 @@ const Home = () => {
           { to: "/Tour", label: "IBX Tour" },
           { to: "/About", label: "About Us" },
         ]}
-        cta={{ to: "/register", label: "Join Now" }}
+        cta={{
+          href: "https://ibx2026.eventcrib.com/",
+          label: "Join Now",
+          target: "_blank",
+        }}
       />
 
       <div className="min-h-screen bg-black text-white">

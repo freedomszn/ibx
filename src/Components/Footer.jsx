@@ -58,8 +58,7 @@ const Footer = () => {
 
       <div className="flex flex-col max-w-full items-start justify-between gap-10 px-5 py-16 bg-black dotted md:px-7 lg:px-10 xl:px-12 2xl:px-15">
         <div className="flex p-0">
-            <LogoRow speed={0}>
-            </LogoRow>
+          <LogoRow speed={0}></LogoRow>
         </div>
 
         <div className="flex gap-10 lg:gap-6 items-start flex-col xl:flex-row-reverse xl:items-center xl:justify-between w-full">
@@ -93,11 +92,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <Link to="/IBX2026" className="w-full flex">
+        <a href="https://ibx2026.eventcrib.com/" target="blank" className="w-full flex">
           <button className="text-white text-[14px] bg-black dotted border border-white w-40 h-8 font-medium point rounded-md hover:bg-white/80 hover:text-black transition-all duration-700">
             Learn More
           </button>
-        </Link>
+        </a>
 
         <div className="flex flex-col gap-8 lg:flex lg:justify-between lg:flex-row lg:mt-26.25 w-full">
           <p className="text-white text-[16px] font-medium sans tracking-[-1.1%] leading-6">

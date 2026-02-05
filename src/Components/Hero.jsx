@@ -33,11 +33,11 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-4 mt-6 ">
-          <NavLink to="/Event">
+          <a href="https://ibx2026.eventcrib.com/" target="blank">
             <button className="rounded-md sans orange w-38.75 h-9 text-sm font-bold text-black hover:scale-105 transition-all duration-700 point">
               Join the Movement
             </button>
-          </NavLink>
+          </a>
 
           {/* <NavLink to="/Tour">
             <button className="rounded-md geist border border-white w-30.5 h-8 text-sm font-bold hover:bg-white/20 transition-all duration-700 point">
