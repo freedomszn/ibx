@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar';
+import Hero from '../about/Hero';
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
           target: "_blank",
         }}
       />
+      <Hero/>
     </>
   );
 }

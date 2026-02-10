@@ -5,19 +5,19 @@ const pics = "/comp.png";
 const Card = () => {
   const cardsData = [
     {
-      image: pics,
+      image: "/th.JPG",
       title: "Town Hall Activations",
       h2: "Grassroots engagements and onboarding of 100,000 underbanked individuals into DeFi.",
       text: "Focus: Wallet creation, savings education, and financial inclusion.",
     },
     {
-      image: pics,
+      image: "/mkt.jpg",
       title: "Marketplace Invasions",
       h2: "Live demonstrations of blockchain use in everyday trade.",
       text: "Focus: Vendors accepting crypto payments, hands-on DeFi exposure.",
     },
     {
-      image: pics,
+      image: "tw.JPG",
       title: "Hub & Community Visits",
       h2: "Collaborations with blockchain hubs and communities to host mini-events, trainings, and panels.",
       text: "Focus: Developer education, startup networking, ecosystem building.",
@@ -53,7 +53,7 @@ const Card = () => {
             className="w-full max-w-158.75 min-w-70 bg-white space-y-5 py-8 px-5 rounded-xl"
           >
             <img
-              className="object-cover w-full min-w-60 min-h-60 rounded-lg"
+              className="object-cover w-full min-w-60 h-60 rounded-lg lg:grayscale"
               src={card.image}
               alt={card.title}
             />

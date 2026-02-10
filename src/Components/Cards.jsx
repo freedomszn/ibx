@@ -31,10 +31,10 @@ const Cards = ({ title, text, image, className = "" }) => {
         <div className="absolute bottom-7.5 px-4">
           <h1
             className="getai font-medium  text-[16px] tracking-[0em]
-  sm:text-[17px]
-  md:text-[18px]
-  lg:text-[19px]
-  2xl:text-[20px] leading-7 mb-2 max-w-60"
+            sm:text-[17px]
+            md:text-[18px]
+            lg:text-[19px]
+            2xl:text-[20px] leading-7 mb-2 max-w-60"
           >
             {title}
           </h1>

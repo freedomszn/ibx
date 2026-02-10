@@ -48,8 +48,8 @@
   background-size: cover;
 }
 .recap {
-    background-position: center;
-    background-image: url(/slide.jpg);
+  background-position: center;
+  background-image: url(/slide.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -73,4 +73,33 @@
   .aim {
     padding: 40px 0;
   }
+}
+@media (min-width: 640px) {
+.tour {
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-image: url(/tour.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+@media (min-width: 640px) {
+.about {
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-image: url(/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+@media (max-width: 640px) {
+  .mobile {
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-image: url(/mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }

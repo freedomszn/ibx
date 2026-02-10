@@ -10,26 +10,6 @@ import Target from "../Target";
 import Outline from "../Outline";
 import Sponsors from "../Sponsors";
 
-const sectionVariants = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0 },
-};
-
-const sectionTransition = { duration: 0.6, ease: [0.4, 0, 0.2, 1] };
-
-const Reveal = ({ children, className = "" }) => (
-  <m.section
-    className={className}
-    variants={sectionVariants}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0.25 }} // once=true prevents re-animating on scroll up/down
-    transition={sectionTransition}
-  >
-    {children}
-  </m.section>
-);
-
 const Home = () => {
   return (
     <>
@@ -47,41 +27,20 @@ const Home = () => {
       />
 
       <div className="min-h-screen bg-black text-white">
-        {/* Page transition stays as-is */}
+        {/* Page transition ONLY */}
         <m.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
         >
-          {/* Scroll reveal sections */}
-          <Reveal>
-            <Hero />
-          </Reveal>
-
-          <Reveal>
-            <Recap />
-          </Reveal>
-
-          <Reveal>
-            <Glimpse />
-          </Reveal>
-
-          <Reveal>
-            <Target />
-          </Reveal>
-
-          <Reveal>
-            <Outline />
-          </Reveal>
-
-          <Reveal>
-            <Sponsors />
-          </Reveal>
-
-          <Reveal>
-            <Collaborators />
-          </Reveal>
+          <Hero />
+          <Recap />
+          <Glimpse />
+          <Target />
+          <Outline />
+          <Sponsors />
+          <Collaborators />
         </m.div>
       </div>
 

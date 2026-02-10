@@ -8,26 +8,6 @@ import Gallery from "../tour/Gallery";
 import { motion as m } from "framer-motion";
 import Join from "../tour/Join";
 
-const sectionVariants = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0 },
-};
-
-const sectionTransition = { duration: 0.6, ease: [0.4, 0, 0.2, 1] };
-
-const Reveal = ({ children, className = "" }) => (
-  <m.section
-    className={className}
-    variants={sectionVariants}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0.25 }}
-    transition={sectionTransition}
-  >
-    {children}
-  </m.section>
-);
-
 const Tour = () => {
   const logo = "/tourlogo.svg";
 
@@ -47,6 +27,7 @@ const Tour = () => {
       />
 
       <div className="min-h-screen bg-black text-white">
+        {/* Page transition ONLY */}
         <m.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,25 +35,11 @@ const Tour = () => {
           transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
           className="min-h-screen"
         >
-          <Reveal>
-            <Hero />
-          </Reveal>
-
-          <Reveal>
-            <Card />
-          </Reveal>
-
-          <Reveal>
-            <Collaborators />
-          </Reveal>
-
-          <Reveal>
-            <Gallery />
-          </Reveal>
-
-          <Reveal>
-            <Join />
-          </Reveal>
+          <Hero />
+          <Card />
+          <Collaborators />
+          <Gallery />
+          <Join />
         </m.div>
       </div>
 
